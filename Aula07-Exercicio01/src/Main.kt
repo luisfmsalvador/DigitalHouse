@@ -1,20 +1,20 @@
 fun main() {
-    var cliente =  Cliente()
-
     print("Informe o nome do cliente: ")
-    cliente.nome = readLine()!!.toString()
+    var nome = readLine()!!.toString()
 
     print("Informe o sobrenome do cliente: ")
-    cliente.sobrenome = readLine()!!.toString()
+    var sobrenome = readLine()!!.toString()
 
-    print("Informe o número da conta: ")
+    var cliente =  Cliente(nome, sobrenome)
+
+    println("\nBem-vindo prezado(a) " + cliente.nomeCompleto)
+    print("Por favor, informe o número da conta: ")
     var numeroConta = readLine()!!.toInt()
 
     print("Informe o saldo inicial da conta: ")
     var saldoInicial = readLine()!!.toDouble()
 
     var conta = Conta(numeroConta, saldoInicial, cliente)
-
 
     do {
         mensagem()
@@ -42,4 +42,5 @@ fun mensagem() {
     println("--- 1 - Depósito")
     println("--- 2 - Saque")
     println("--- 9 - Sair")
+    print("Informe a sua opção: ")
 }
