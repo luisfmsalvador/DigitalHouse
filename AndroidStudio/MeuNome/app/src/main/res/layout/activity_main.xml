@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nome"
+        android:layout_marginTop="40dp"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="@color/colorPreto"
+         />
+
+    <EditText
+        android:id="@+id/txtNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/digite_seu_nome"
+        android:layout_marginTop="35dp"
+        android:textSize="25sp"
+        android:inputType="text"
+         />
+
+    <Button
+        android:id="@+id/btnExibir"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:textAllCaps="false"
+        android:text="@string/exibir"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/colorBotao"
+        android:textColor="@color/colorBranco"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/meu_nome"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:textSize="35sp"
+        android:textColor="@color/colorPreto"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="35sp"
+        android:textColor="@color/colorPreto"
+        android:textStyle="bold"
+        />
+
+</LinearLayout>

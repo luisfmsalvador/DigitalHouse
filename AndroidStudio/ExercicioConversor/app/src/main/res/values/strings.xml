@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Exercicio - Conversor</string>
+    <string name="temperatura_em_c">Temperatura em °C</string>
+</resources>
